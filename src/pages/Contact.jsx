@@ -15,10 +15,8 @@ const Contact = () =>{
     const [formInfo, setFormInfo] = useState(initialState);
     const handleForm = event =>{
         const {name, email, message} = {...formInfo};
-        if(name && email && message){
-            setFormInfo(initialState);
-        }else{
-            alert('Fill all the field before send');
+        if(!(name && email && message)){
+            return alert('Fill all the field before send');
         }
     }
 
