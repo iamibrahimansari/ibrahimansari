@@ -1,0 +1,55 @@
+.education{
+    .education-section{
+        position: relative;
+        .edu-line{
+            background-color: skyblue;
+            width: 1rem;
+            height: 63rem;
+            margin-inline: auto;
+        }
+        .edu-circle{
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            background-color: #f7f7f7;
+            border: 5px solid skyblue;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .circle-1{
+            top: 15rem;
+        }
+        .circle-2{
+            top: 30rem;
+        }
+        .circle-3{
+            top: 45rem;
+        }
+        .individual-edu{
+            position: absolute;
+            background-color: #eee;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+        .edu-1{
+            top: 7.5rem;
+            left: 10rem;
+        }
+        .edu-2{
+            top: 22.5rem;
+            right: 8rem;
+        }
+        .edu-3{
+            top: 37.5rem;
+            left: 10rem;
+        }
+    }
+}

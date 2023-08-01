@@ -1,0 +1,36 @@
+.intro{
+    background-color: #f7f7f7;
+    min-height: 90vh;
+    position: relative;
+    .social-links{
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #fff;
+        width: 5rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-size: 3rem;
+            color: #444;
+            padding: 1rem;
+            &:hover{
+                background-color: #facf0f33;
+            }
+        }
+    }
+    .title-desc{
+        .title{
+            font-size: 6rem;
+        }
+        .desc{
+            font-size: 2rem;
+        }
+    }
+    .project-btn{
+        margin-top: 5rem;
+    }
+}

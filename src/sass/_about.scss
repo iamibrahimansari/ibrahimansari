@@ -1,0 +1,40 @@
+.about{
+    .title-desc{
+        .title{
+            font-size: 4rem;
+        }
+        .desc{
+            font-size: 1.9rem;
+        }
+    }
+    &__skill{
+        display: flex;
+        gap: 10rem;
+        h3{
+            margin-bottom: 2rem;
+        }
+        .skill__section{
+            .skillset{
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                span{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    background-color: #ccc;
+                    padding: 1rem 3rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    &__desc{
+        p{
+            font-size: 1.7rem;
+        }
+        p:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+

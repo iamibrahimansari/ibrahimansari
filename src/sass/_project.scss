@@ -1,0 +1,119 @@
+.projects{
+    .project-section{
+        height: 73rem;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        select{
+            margin-inline: auto;
+            width: 30%;
+            padding: 1rem;
+            border: 5px solid darkcyan;
+            border-radius: 10px;
+            font-size: 1.6rem;
+            outline: none;
+            cursor: pointer;
+        }
+        .project-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            .project{
+                padding: 1rem;
+                width: 25rem;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                gap: 1rem;
+                align-self: flex-start;
+                transition: all 0.3s linear;
+                overflow: hidden;
+                position: relative;
+                .level{
+                    background-color: tomato;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    position: absolute;
+                    width: 20rem;
+                    transform: translateY(-0.5rem) translate(10rem, 3rem) rotate(50deg);
+                }
+                .backface{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    transition: all 0.3s linear;
+                    gap: 2rem;
+                    .ghlive{
+                        background-color: tomato;
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        padding: 1rem 2rem;
+                        width: 20rem;
+                        text-align: center;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+                }
+                &:hover .backface{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+                .project-img,
+                .project-name,
+                .project-list{
+                    transition: all 0.3s linear;
+                }
+                &:hover .project-img,
+                &:hover .project-name,
+                &:hover .project-skills{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .project-img{
+                    height: 20rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .project-name{
+                    font-size: 1.6rem;
+                    text-align: center;
+                    height: auto;
+                }
+                .project-skills{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    height: auto;
+                    span{
+                        font-size: 1.4rem;
+                        padding: 0.5rem 1rem;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .coming-soon{
+                margin-top: 10rem;
+                font-size: 5rem;
+            }
+        }
+    }
+}
