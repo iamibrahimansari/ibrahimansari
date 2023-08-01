@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
 
 import TitleAndDesc from '../components/TitleAndDesc';
 import InputField from '../components/InputField';
@@ -13,13 +12,11 @@ const initialState = {
 }
 
 const Contact = () =>{
-    const navigate = useNavigate();
     const [formInfo, setFormInfo] = useState(initialState);
     const handleForm = event =>{
         const {name, email, message} = {...formInfo};
         if(name && email && message){
             setFormInfo(initialState);
-            navigate('https://ibrahimansari.vercel.app/');
         }else{
             alert('Fill all the field before send');
         }
