@@ -14,7 +14,7 @@ const initialState = {
 const Contact = () =>{
     const [formInfo, setFormInfo] = useState(initialState);
     const handleForm = event =>{
-        // event.preventDefault();
+        event.preventDefault();
         setFormInfo(initialState);
     }
 
