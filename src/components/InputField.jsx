@@ -1,16 +1,15 @@
-const InputField = ({onChange, formInfo, name}) =>{
+const InputField = ({name}) =>{
     return <label>
         <span>{name}</span>
         {
             name === 'Name' || name === 'Email' ?
             <input 
-                type={name === 'Name' ? 'text' : 'email'} 
-                onChange={onChange}
-                value={name === 'Name' ? formInfo.name : formInfo.email} 
+                type={name === 'Name' ? 'text' : 'email'}  
                 name={name.toLowerCase()} 
-                placeholder={`Enter Your ${name}`} 
+                placeholder={`Enter Your ${name}`}
+                required 
             /> : 
-            <textarea placeholder={`Enter Your ${name}`} onChange={onChange} value={formInfo.message} name={name.toLowerCase()}></textarea>
+            <textarea placeholder={`Enter Your ${name}`} name={name.toLowerCase()} required></textarea>
         }
     </label>
 }
