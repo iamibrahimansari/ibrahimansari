@@ -1,8 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 
-import {RxHamburgerMenu, RxCross2} from 'react-icons/rx';
-
 import {Link} from 'react-router-dom';
 
 import {menus} from '../data';
@@ -37,10 +35,7 @@ const Header = () =>{
                 })
             }
         </nav>
-        {/* <span className="open-menu"><RxHamburgerMenu /></span>
-        <span className="close-menu"><RxCross2 /></span> */}
-    </header>
-    
+    </header> 
 }
 
 export default Header;
