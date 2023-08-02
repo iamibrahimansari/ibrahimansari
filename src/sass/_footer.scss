@@ -3,17 +3,31 @@ footer{
     display: flex;
     padding: 8rem 8rem 4rem 8rem;
     flex-direction: column;
+    @media screen and (width <= 375px){
+        padding: 4rem;
+    }
     gap: 3rem;
     .upper{
         display: flex;
+        @media screen and (width <= 426px){
+            flex-direction: column;
+            gap: 5rem;
+            align-items: center;
+        }
         .left{
             flex: 1;
             h2{
                 font-size: 3rem;
                 margin-bottom: 2rem;
+                @media screen and (width <= 375px){
+                    text-align: center;
+                }
             }
             p{
                 font-size: 1.6rem;
+                @media screen and (width <= 426px){
+                    text-align: justify;
+                }
             }
         }
         .right{
@@ -22,6 +36,9 @@ footer{
                 font-size: 3rem;
                 text-align: right;
                 margin-bottom: 2rem;
+                @media screen and (width <= 426px){
+                    text-align: center;
+                }
             }
             .social-links{
                 font-size: 3rem;

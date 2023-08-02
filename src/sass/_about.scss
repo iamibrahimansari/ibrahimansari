@@ -10,6 +10,10 @@
     &__skill{
         display: flex;
         gap: 10rem;
+        @media screen and (width <= 426px){
+            flex-direction: column;
+            gap: 5rem;
+        }
         h3{
             margin-bottom: 2rem;
         }

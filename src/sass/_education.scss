@@ -6,6 +6,9 @@
             width: 1rem;
             height: 63rem;
             margin-inline: auto;
+            @media screen and (width <= 426px){
+                display: none;
+            }
         }
         .edu-circle{
             position: absolute;
@@ -16,6 +19,9 @@
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
+            @media screen and (width <= 426px){
+                display: none;
+            }
         }
         .circle-1{
             top: 15rem;
@@ -38,18 +44,45 @@
             p{
                 font-size: 1.6rem;
             }
+            @media screen and (width <= 426px){
+                position: static;
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+            }
         }
         .edu-1{
             top: 7.5rem;
             left: 10rem;
+            @media screen and (width <= 1024px){
+                top: 2rem;
+            }
+            @media screen and (width <= 768px){
+                top: 2rem;
+            }
+            @media screen and (width <= 426px){
+                top: 0;
+            }
         }
         .edu-2{
             top: 22.5rem;
             right: 8rem;
+            @media screen and (width <= 426px){
+                top: 25rem;
+            }
         }
         .edu-3{
             top: 37.5rem;
             left: 10rem;
+            @media screen and (width <= 1024px){
+                top: 43rem;
+            }
+            @media screen and (width <= 768px){
+                top: 43rem;
+            }
+            @media screen and (width <= 426px){
+                top: 45rem;
+            }
         }
     }
 }

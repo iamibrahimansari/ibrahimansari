@@ -14,6 +14,9 @@
             font-size: 1.6rem;
             outline: none;
             cursor: pointer;
+            @media screen and (width <= 768px){
+                width: 50%;
+            }
         }
         .project-list{
             display: flex;

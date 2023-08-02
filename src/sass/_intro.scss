@@ -3,6 +3,9 @@
     min-height: 90vh;
     position: relative;
     .social-links{
+        @media screen and (width <= 426px){
+            display: none;
+        }
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
         position: absolute;
         top: 50%;
@@ -25,9 +28,19 @@
     .title-desc{
         .title{
             font-size: 6rem;
+            @media screen and (width <= 1024px){
+                font-size: 5rem;
+            }
+            @media screen and (width <= 375px){
+                font-size: 4rem;
+            }
         }
         .desc{
             font-size: 2rem;
+            @media screen and (width <= 426px){
+                text-align: justify;
+                width: 100%;
+            }
         }
     }
     .project-btn{

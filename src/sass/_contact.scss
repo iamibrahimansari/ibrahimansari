@@ -3,10 +3,22 @@
         background-color: #fff;
         margin-inline: 20rem;
         padding: 5rem;
+        @media screen and (width <= 375px){
+            padding: 2rem 2rem 5rem 2rem;
+        }
         border-radius: 5px;
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
+        @media screen and (width <= 1024px){
+            margin-inline: 5rem;
+        }
+        @media screen and (width <= 768px){
+            margin-inline: 5rem;
+        }
+        @media screen and (width <= 426px){
+            margin-inline: 1rem;
+        }
         button{
             margin-left: auto;
             margin-top: 2rem;

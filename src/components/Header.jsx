@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 
@@ -9,7 +8,6 @@ import {Link} from 'react-router-dom';
 import {menus} from '../data';
 
 const Header = () =>{
-    const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
     return <header>
         <div className="logo" onClick={() => navigate('/')}>
@@ -18,7 +16,7 @@ const Header = () =>{
             </div>
             <p className="my-name">IBRAHIM ANSARI</p>
         </div>
-        <nav className="nav" style={{display: isOpen ? 'none' : 'flex'}}>
+        <nav className="nav">
             {
                 menus.map((menu, index) => {
                     let path = null;
@@ -39,8 +37,8 @@ const Header = () =>{
                 })
             }
         </nav>
-        <span className="open-menu" onClick={() => setIsOpen(!isOpen)}><RxHamburgerMenu /></span>
-        <span className="close-menu"><RxCross2 /></span>
+        {/* <span className="open-menu"><RxHamburgerMenu /></span>
+        <span className="close-menu"><RxCross2 /></span> */}
     </header>
     
 }
