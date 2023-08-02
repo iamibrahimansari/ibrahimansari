@@ -17,6 +17,12 @@
             @media screen and (width <= 768px){
                 width: 50%;
             }
+            @media screen and (width <= 426px){
+                width: 80%;
+            }
+            @media screen and (width <= 320px){
+                width: 100%;
+            }
         }
         .project-list{
             display: flex;
