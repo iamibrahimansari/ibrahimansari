@@ -23,7 +23,6 @@ export const skillBgColor = {
     Vite: '#E2D6D6',
     Yarn: '#D6E2D6',
     NPM: '#E6D4D4',
-    Supabase: '#E8D6E2' 
 }
 
 export const projectsTitleDesc = {
@@ -81,7 +80,8 @@ export const menus = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
 
 export const projectsInfo = [
     {
-        categories: ['intermediate', 'fullstack'],
+        categories: 'intermediate',
+        desc: 'In this project user can create fact and user can vote for that fact whether that fact is correct or incorrect or unbelivable and based on the votes, appearance of fact can be change on application',
         name: 'Create Fact',
         imgUrl: '/project-images/create-fact.PNG',
         github: 'https://github.com/iamibrahimansari/create-fact',
@@ -89,148 +89,12 @@ export const projectsInfo = [
         usedSkills: [
             'React',
             'Styled-Components',
-            'Supabase',
+            'Node',
+            'Express',
+            'MongoDB',
             'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['intermediate'],
-        name: 'Keeper',
-        imgUrl: '/project-images/keeper.PNG',
-        github: 'https://github.com/iamibrahimansari/keeper',
-        live: 'https://keeper-pink.vercel.app/',
-        usedSkills: [
-            'React',
-            'Styled-Components',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['beginner'],
-        name: 'Accordion',
-        imgUrl: '/project-images/accordion.PNG',
-        github: 'https://github.com/iamibrahimansari/accordion',
-        live: 'https://accordion-vert.vercel.app',
-        usedSkills: [
-            'React',
-            'Styled-Components',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['advanced'],
-        name: 'Static Tech Blog',
-        imgUrl: '/project-images/static-tech-blog.PNG',
-        github: 'https://github.com/iamibrahimansari/static-tech-blog',
-        live: 'https://iamibrahimansari.github.io/static-tech-blog/',
-        usedSkills: [
-            'HTML',
-            'CSS',
-            'Javascript',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['intermediate'],
-        name: 'Guess My Number',
-        imgUrl: '/project-images/guess-my-number.PNG',
-        github: 'https://github.com/iamibrahimansari/guess-my-number',
-        live: 'https://iamibrahimansari.github.io/guess-my-number/',
-        usedSkills: [
-            'HTML',
-            'CSS',
-            'Javascript',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['beginner', '10x'],
-        name: 'Countdown Timer',
-        imgUrl: '/project-images/countdown-timer.PNG',
-        github: 'https://github.com/iamibrahimansari/countdown-timer',
-        live: 'https://countdown-timer-beryl.vercel.app/',
-        usedSkills: [
-            'React',
-            'CSS',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['advanced', 'fcc'],
-        name: 'Product Landing Page',
-        imgUrl: '/project-images/product-landing.PNG',
-        github: 'https://github.com/iamibrahimansari/product-landing',
-        live: 'https://iamibrahimansari.github.io/product-landing/',
-        usedSkills: [
-            'HTML',
-            'CSS',
-            'VSCode'
-        ]
-    },
-    {
-        categories: ['beginner'],
-        name: 'Experience Tab',
-        imgUrl: '/project-images/exp-tab.PNG',
-        github: 'https://github.com/iamibrahimansari/experience-tab',
-        live: 'https://experience-tab-hazel.vercel.app/',
-        usedSkills: [
-            'React',
-            'SASS',
-            'VSCode',
-            'Vite',
-            'NPM'
-        ]
-    },
-    {
-        categories: ['intermediate', '10x'],
-        name: 'Task Management',
-        imgUrl: '/project-images/task-management.PNG',
-        github: 'https://github.com/iamibrahimansari/task-management',
-        live: 'https://task-management-six-sable.vercel.app/',
-        usedSkills: [
-            'React',
-            'Styled-Components',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['beginner', '10x'],
-        name: 'SnapShot',
-        imgUrl: '/project-images/snapshot.png',
-        github: 'https://github.com/iamibrahimansari/snapshot',
-        live: 'https://snapshot-lyart.vercel.app/',
-        usedSkills: [
-            'React',
-            'SASS',
-            'VSCode',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: ['intermediate'],
-        name: 'Faraway',
-        imgUrl: '/project-images/faraway.png',
-        github: 'https://github.com/iamibrahimansari/faraway',
-        live: 'https://faraway-rust.vercel.app/',
-        usedSkills: [
-            'React',
-            'Styled-Components',
-            'VSCode',
+            'Git',
+            'Github',
             'Vite',
             'Yarn'
         ]

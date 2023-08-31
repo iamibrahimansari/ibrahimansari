@@ -1,9 +1,11 @@
 import {useState} from 'react';
 
+import {Link} from 'react-router-dom';
+
 import TitleAndDesc from '../components/TitleAndDesc';
 import Project from '../components/Project';
 
-import {projectsTitleDesc, projectsInfo, projectCategories} from '../data';
+import {projectsTitleDesc, projectsInfo, projectCategories, skillBgColor} from '../data';
 
 const Projects = () =>{
     const [projects, setProjects] = useState(projectsInfo);
@@ -20,18 +22,29 @@ const Projects = () =>{
             <div className="common-section">
                 <TitleAndDesc {...projectsTitleDesc} />
                 <div className="project-section">
-                    <select onChange={handleOnChange}>
-                        <option defaultValue hidden value="">Choose Project Category</option>
-                        {
-                            projectCategories.map(({value, text}, index) => <option key={index} value={value}>{text}</option>)
-                        }
-                    </select>
                     <div className="project-list">
-                        { 
-                            projects.length ? 
-                            projects.map((project, index) => <Project key={index} {...project} />) :
-                            <h2 className="coming-soon">Coming Soon...</h2>
-                        }
+                        {
+                            projects.map(project => {
+                                return <div className="project">
+                                    <div className="project-img">
+                                        <img src={project.imgUrl} alt='create-fact' />
+                                    </div>
+                                    <div className="project-info">
+                                        <div className="name">{project.name}</div>
+                                        <p className="desc">{project.desc}</p>
+                                        <div className="live-gh">
+                                            <Link to={project.live} target='_blank'>Live Project</Link>
+                                            <Link to={project.github} target='_blank'>Project Code</Link>
+                                        </div>
+                                        <div className="skills">
+                                            {
+                                                project.usedSkills.map(skill => <span style={{backgroundColor: skill === 'Styled-Components' ? skillBgColor['StyledComponents'] : skillBgColor[skill]}} key={skill}>{skill}</span>)
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            })
+                        }    
                     </div>
                 </div>
             </div>

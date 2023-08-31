@@ -1,127 +1,73 @@
-.projects{
-    .project-section{
-        height: 73rem;
-        overflow-y: auto;
+.project-section{
+    .project-list{
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        select{
-            margin-inline: auto;
-            width: 30%;
-            padding: 1rem;
-            border: 5px solid darkcyan;
-            border-radius: 10px;
-            font-size: 1.6rem;
-            outline: none;
-            cursor: pointer;
-            @media screen and (width <= 768px){
-                width: 50%;
-            }
-            @media screen and (width <= 426px){
-                width: 80%;
-            }
-            @media screen and (width <= 320px){
-                width: 100%;
-            }
-        }
-        .project-list{
+        .project{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1rem;
-            .project{
-                padding: 1rem;
-                width: 25rem;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1.6rem;
+            overflow: hidden;
+            color: white;
+            &:hover img{
+                transform: scale(1.5);
+            }
+            &-img{
+                overflow: hidden;
+                img{
+                    transition: transform 0.3s linear;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-info{
+                width: 70%;
+                padding: 2rem 3rem;
                 display: flex;
                 flex-direction: column;
-                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                gap: 1rem;
-                align-self: flex-start;
-                transition: all 0.3s linear;
-                overflow: hidden;
-                position: relative;
-                .level{
+                gap: 2rem;
+                .name{
+                    border-radius: 5px;
+                    font-weight: bold;
                     background-color: tomato;
-                    color: #fff;
-                    padding: 0.5rem 1rem;
+                    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+                    text-align: center;
+                    padding: 1rem;
+                    font-size: 2.5rem;
+                }
+                .desc{
+                    background-color: #444;
+                    padding: 1rem;
+                    border-radius: 5px;
                     font-size: 1.4rem;
-                    text-align: center;
-                    position: absolute;
-                    width: 20rem;
-                    transform: translateY(-0.5rem) translate(10rem, 3rem) rotate(50deg);
                 }
-                .backface{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    left: 0;
-                    bottom: 0;
-                    opacity: 0;
-                    visibility: hidden;
+                .live-gh{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    transition: all 0.3s linear;
-                    gap: 2rem;
-                    .ghlive{
-                        background-color: tomato;
-                        font-size: 1.6rem;
-                        text-decoration: none;
-                        padding: 1rem 2rem;
-                        width: 20rem;
-                        text-align: center;
-                        border-radius: 10px;
-                        color: #fff;
-                    }
-                }
-                &:hover .backface{
-                    opacity: 1;
-                    visibility: visible;
-                }
-                &:hover{
-                    transform: translateY(-5px);
-                }
-                .project-img,
-                .project-name,
-                .project-list{
-                    transition: all 0.3s linear;
-                }
-                &:hover .project-img,
-                &:hover .project-name,
-                &:hover .project-skills{
-                    opacity: 0;
-                    visibility: hidden;
-                }
-                .project-img{
-                    height: 20rem;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                .project-name{
-                    font-size: 1.6rem;
-                    text-align: center;
-                    height: auto;
-                }
-                .project-skills{
-                    display: flex;
-                    flex-wrap: wrap;
                     gap: 1rem;
-                    height: auto;
-                    span{
-                        font-size: 1.4rem;
+                    & > *{
+                        color: #fff;
                         padding: 0.5rem 1rem;
                         border-radius: 5px;
+                        font-size: 1.4rem;
+                    }
+                    & > *:first-child{
+                        background-color: darkcyan;
+                    }
+                    & > *:last-child{
+                        background-color: orange;
                     }
                 }
-            }
-            .coming-soon{
-                margin-top: 10rem;
-                font-size: 5rem;
+                .skills{
+                    display: flex;
+                    gap: 1rem;
+                    color: black;
+                    flex-wrap: wrap;
+                    span{
+                        padding: 0.5rem 1rem;
+                        font-size: 1.4rem;
+                        border-radius: 5px;
+                    }
+                }                
             }
         }
     }
