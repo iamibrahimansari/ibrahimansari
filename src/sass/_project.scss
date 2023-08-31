@@ -69,9 +69,11 @@
         }
         .others-link{
             display: flex;
-            gap: 5rem;
+            gap: 1rem;
+            flex-wrap: wrap;
             align-items: center;
             & > *{
+                flex: 20rem;
                 font-size: 1.6rem;
                 color: white;
                 background-color: black;

@@ -7,7 +7,7 @@ import Project from '../components/Project';
 
 import {projectsTitleDesc, projectsInfo, projectCategories, skillBgColor} from '../data';
 
-const othersLinkContent = ['My LinkTree', 'HTML-CSS/SASS Projects', 'React Projects'];
+const othersLinkContent = ['LinkTree', 'HTML-CSS', 'HTML-CSS-JS', 'React'];
 
 const Projects = () =>{
     const [projects, setProjects] = useState(projectsInfo);
