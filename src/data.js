@@ -98,6 +98,26 @@ export const projectsInfo = [
             'Vite',
             'Yarn'
         ]
+    },
+    {
+        categories: 'intermediate',
+        desc: 'In this project user can create fact and user can vote for that fact whether that fact is correct or incorrect or unbelivable and based on the votes, appearance of fact can be change on application',
+        name: 'Create Fact',
+        imgUrl: '/project-images/create-fact.PNG',
+        github: 'https://github.com/iamibrahimansari/create-fact',
+        live: 'https://create-fact.vercel.app/',
+        usedSkills: [
+            'React',
+            'Styled-Components',
+            'Node',
+            'Express',
+            'MongoDB',
+            'VSCode',
+            'Git',
+            'Github',
+            'Vite',
+            'Yarn'
+        ]
     }
 ]
 
