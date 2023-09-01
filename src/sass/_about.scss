@@ -10,7 +10,7 @@
     &__skill{
         display: flex;
         gap: 10rem;
-        @media screen and (width <= 426px){
+        @media screen and (width <= 584px){
             flex-direction: column;
             gap: 5rem;
             .about__desc{

@@ -40,6 +40,7 @@ body{
     }
 }
 
+
 .App > *:not(.about) .btn{
     text-align: center;    
 }
@@ -126,4 +127,9 @@ h3{
         background-color: black;
     }
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.App.hidden{
+    max-height: 100vh;
+    overflow-y: hidden;
 }

@@ -3,9 +3,11 @@ import {HashLink} from 'react-router-hash-link';
 
 import {Link} from 'react-router-dom';
 
+import HumbergureMenu from './HumbergureMenu';
+
 import {menus} from '../data';
 
-const Header = () =>{
+const Header = ({stateMethod, setHiddenClass}) =>{
     const navigate = useNavigate();
     return <header>
         <div className="logo" onClick={() => navigate('/')}>
@@ -35,6 +37,7 @@ const Header = () =>{
                 })
             }
         </nav>
+        <HumbergureMenu stateMethod={stateMethod} setHiddenClass={setHiddenClass} />
     </header> 
 }
 

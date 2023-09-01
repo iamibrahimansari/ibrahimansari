@@ -6,7 +6,7 @@
             width: 1rem;
             height: 63rem;
             margin-inline: auto;
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 display: none;
             }
         }
@@ -19,7 +19,7 @@
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 display: none;
             }
         }
@@ -44,7 +44,7 @@
             p{
                 font-size: 1.6rem;
             }
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 position: static;
                 &:not(:last-child){
                     margin-bottom: 2rem;
@@ -60,14 +60,14 @@
             @media screen and (width <= 768px){
                 top: 2rem;
             }
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 top: 0;
             }
         }
         .edu-2{
             top: 22.5rem;
             right: 8rem;
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 top: 25rem;
             }
         }
@@ -80,7 +80,7 @@
             @media screen and (width <= 768px){
                 top: 43rem;
             }
-            @media screen and (width <= 426px){
+            @media screen and (width <= 584px){
                 top: 45rem;
             }
         }

@@ -2,39 +2,26 @@ import {Link} from 'react-router-dom';
 
 import Button from '../components/Button';
 
-import {skillBgColor} from '../data';
-
-const Project = ({categories, name, imgUrl, github, live, usedSkills}) =>{
-    const level = categories[0][0].toUpperCase() + categories[0].slice(1);
-    return(
-        <div className="project">
-            <div className="level">{level}</div>
-            <div className="backface">
-                <Link className="ghlive" to={github} target="_blank">Github</Link>
-                <Link className="ghlive" to={live} target="_blank">Live</Link>
-            </div>
-            <div className="project-img">
-                <img src={imgUrl} alt={name} />
-            </div>
-            <p className="project-name">{name}</p>
-            <div className="project-skills">
+const Project = ({live, imgUrl, name, desc, github, usedSkills}) =>{
+    return <div key={live} className="project">
+        <div className="project-img">
+            <img src={imgUrl} alt='create-fact' />
+        </div>
+        <div className="project-info">
+            <p className="name">{name}</p>
+            <p className="desc">{desc}</p>
+            <div className="live-gh">
                 {
-                    usedSkills.map((skill, index) => {
-                        return <span  
-                            style={{
-                                backgroundColor: skill === 'Styled-Components' ? 
-                                skillBgColor.StyledComponents : 
-                                skillBgColor[skill]
-                            }} 
-                            key={index} 
-                            className="skill">
-                                {skill}
-                        </span>}
-                    )
+                    [live, github].map((link, i) => <Link key={link} className={`link-${i + 1}`} to={link} target='_blank'>{i ? 'Project Code' : 'Live Project'}</Link>)
+                }
+                {
+                    usedSkills.map(skill => (
+                        <span key={skill}>{skill}</span>
+                    ))
                 }
             </div>
         </div>
-    )
+    </div>
 }
 
 export default Project;

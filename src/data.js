@@ -6,25 +6,6 @@ export const aboutMe = [
     `I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.`
 ]
 
-export const skillBgColor = {
-    HTML: '#E6D4D4',
-    CSS: '#D6E2F0',
-    Javascript: '#E8E2D6',
-    React: '#D6E8E2',
-    StyledComponents: '#F0E2D6',
-    SASS: '#E2D6E8',
-    Node: '#E8D6E2',
-    Express: '#D6E8E8',
-    MongoDB: '#E2E8D6',
-    Mongoose: '#D6D6E8',
-    Git: '#F0D6E2',
-    Github: '#D6E2E8',
-    VSCode: '#E2E2D6',
-    Vite: '#E2D6D6',
-    Yarn: '#D6E2D6',
-    NPM: '#E6D4D4',
-}
-
 export const projectsTitleDesc = {
     title: "PROJECTS",
     desc: `Here you will find all the projects and you can use any of the project live because my all the projects are online now. So try to explore my projects and I will create more awesome projects like these.`
@@ -118,41 +99,6 @@ export const projectsInfo = [
             'Vite',
             'Yarn'
         ]
-    }
-]
-
-export const projectCategories = [
-    {
-        value: 'all',
-        text: 'All Projects'
-    },
-    {
-        value: 'beginner',
-        text: 'Beginner Projects'
-    },
-    {
-        value: 'intermediate',
-        text: 'Intermediate Projects'
-    },
-    {
-        value: 'advanced',
-        text: 'Advanced Projects'
-    },
-    {
-        value: 'fullstack',
-        text: 'Full Stack Projects'
-    },
-    {
-        value: 'mern',
-        text: 'MERN Stack Projects'
-    },
-    {
-        value: 'fcc',
-        text: 'FreeCodeCamp Projects'
-    },
-    {
-        value: '10x',
-        text: 'The 10x Academy Projects'
     }
 ]
 
