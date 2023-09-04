@@ -62,34 +62,14 @@ export const menus = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
 export const projectsInfo = [
     {
         categories: 'intermediate',
-        desc: 'In this project user can create fact and user can vote for that fact whether that fact is correct or incorrect or unbelivable and based on the votes, appearance of fact can be change on application',
-        name: 'Create Fact',
-        imgUrl: '/project-images/create-fact.PNG',
-        github: 'https://github.com/iamibrahimansari/create-fact',
-        live: 'https://create-fact.vercel.app/',
+        desc: 'The project name is "Teacher Management System" in which you can add new teacher, edit specific teacher, delete specific teacher and of course read as well and the project or web application is fully responsive which means it looks good in almost all devices',
+        name: 'Teacher Management System',
+        imgUrl: '/project-images/tms.jpeg',
+        github: 'https://github.com/iamibrahimansari/teacher-management-system',
+        live: 'https://teacher-management-system-app.onrender.com/',
         usedSkills: [
             'React',
-            'Styled-Components',
-            'Node',
-            'Express',
-            'MongoDB',
-            'VSCode',
-            'Git',
-            'Github',
-            'Vite',
-            'Yarn'
-        ]
-    },
-    {
-        categories: 'intermediate',
-        desc: 'In this project user can create fact and user can vote for that fact whether that fact is correct or incorrect or unbelivable and based on the votes, appearance of fact can be change on application',
-        name: 'Create Fact',
-        imgUrl: '/project-images/create-fact.PNG',
-        github: 'https://github.com/iamibrahimansari/create-fact',
-        live: 'https://create-fact.vercel.app/',
-        usedSkills: [
-            'React',
-            'Styled-Components',
+            'CSS',
             'Node',
             'Express',
             'MongoDB',
