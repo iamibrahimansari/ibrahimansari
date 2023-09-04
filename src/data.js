@@ -79,6 +79,26 @@ export const projectsInfo = [
             'Vite',
             'Yarn'
         ]
+    },
+    {
+        categories: 'intermediate',
+        desc: 'The project name is "Teacher Management System" in which you can add new teacher, edit specific teacher, delete specific teacher and of course read as well and the project or web application is fully responsive which means it looks good in almost all devices',
+        name: 'Teacher Management System',
+        imgUrl: '/project-images/tms.jpeg',
+        github: 'https://github.com/iamibrahimansari/teacher-management-system',
+        live: 'https://teacher-management-system-app.onrender.com/',
+        usedSkills: [
+            'React',
+            'CSS',
+            'Node',
+            'Express',
+            'MongoDB',
+            'VSCode',
+            'Git',
+            'Github',
+            'Vite',
+            'Yarn'
+        ]
     }
 ]
 
