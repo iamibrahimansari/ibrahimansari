@@ -23,16 +23,7 @@ const Projects = () =>{
                         <div className="others-link">
                             {
                                 othersLinkContent.map(content => {
-                                    let path = null;
-                                    const temp = content.toLowerCase();
-                                    switch(temp){
-                                        case 'linktree':
-                                            path = '/linktree';
-                                            break;
-                                        default:
-                                            path = `/${temp}-projects`;
-                                    }
-                                    return <Link key={content} to={'https://ibrahimansari.vercel.app' + path} target="_blank">
+                                    return <Link key={content} to='https://linktree-ibrahim.vercel.app/' target="_blank">
                                         {content}
                                     </Link>
                                 })
