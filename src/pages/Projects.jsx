@@ -32,7 +32,7 @@ const Projects = () =>{
                                         default:
                                             path = `/${temp}-projects`;
                                     }
-                                    return <Link key={content} to={path} target="_blank">
+                                    return <Link key={content} to={'https://ibrahimansari.vercel.app/' + path} target="_blank">
                                         {content}
                                     </Link>
                                 })
