@@ -22,7 +22,20 @@ const Projects = () =>{
                         }  
                         <div className="others-link">
                             {
-                                othersLinkContent.map(content => <Link key={content} to='#'>{content}</Link>)
+                                othersLinkContent.map(content => {
+                                    let path = null;
+                                    const temp = content.toLowerCase();
+                                    switch(temp){
+                                        case 'linktree':
+                                            path = '/linktree';
+                                            break;
+                                        default:
+                                            path = `/${temp}-projects`;
+                                    }
+                                    return <Link key={content} to={path} target="_blank">
+                                        {content}
+                                    </Link>
+                                })
                             }
                         </div>  
                     </div>
