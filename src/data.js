@@ -61,7 +61,6 @@ export const menus = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
 
 export const projectsInfo = [
     {
-        categories: 'intermediate',
         desc: 'The project name is "Teacher Management System" in which you can add new teacher, edit specific teacher, delete specific teacher and of course read as well and the project or web application is fully responsive which means it looks good in almost all devices',
         name: 'Teacher Management System',
         imgUrl: '/project-images/tms.jpeg',
@@ -81,19 +80,35 @@ export const projectsInfo = [
         ]
     },
     {
-        categories: 'intermediate',
-        desc: 'The project name is "Teacher Management System" in which you can add new teacher, edit specific teacher, delete specific teacher and of course read as well and the project or web application is fully responsive which means it looks good in almost all devices',
-        name: 'Teacher Management System',
-        imgUrl: '/project-images/tms.jpeg',
-        github: 'https://github.com/iamibrahimansari/teacher-management-system',
-        live: 'https://teacher-management-system-app.onrender.com/',
+        desc: 'The project name is "Create Fact" in which you can add new fact, vote facts either worst, good, awesome and based on the votes application manage all the facts and also you can filter the facts based on category',
+        name: 'Create Fact',
+        imgUrl: '/project-images/create-fact.png',
+        github: 'https://github.com/iamibrahimansari/create-fact',
+        live: 'https://create-fact.vercel.app/',
         usedSkills: [
             'React',
-            'CSS',
+            'Styled Components',
+            'Supabase',
+            'VSCode',
+            'Git',
+            'Github',
+            'Vite',
+            'Yarn'
+        ]
+    },
+    {
+        desc: 'The project name is "Workouts" in which user can register then login and after login user can add workouts, delete own workouts and user can see only own added workouts but not other user\'s workouts.',
+        name: 'Workouts',
+        imgUrl: '/project-images/workouts.png',
+        github: 'https://github.com/iamibrahimansari/workouts',
+        live: 'https://workouts-qvfl.onrender.com/',
+        usedSkills: [
+            'React',
+            'SASS',
             'Node',
             'Express',
             'MongoDB',
-            'VSCode',
+            'Jsonwebtoken',
             'Git',
             'Github',
             'Vite',
