@@ -20,8 +20,8 @@ const Projects = () =>{
                         }  
                         <div className="others-link">
                             {
-                                othersLinkContent.map(content => {
-                                    return <Link key={content} to='https://linktree-ibrahim.vercel.app/' target="_blank">
+                                othersLinkContent.map(({id, content, url}) => {
+                                    return <Link key={id} to={url} target="_blank">
                                         {content}
                                     </Link>
                                 })
