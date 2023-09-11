@@ -140,3 +140,26 @@ export const education = [
         marks: '69.60%'
     }
 ]
+
+export const othersLinkContent = [
+    {
+        id: 1,
+        content: 'LinkTree',
+        url: 'https://linktree-ibrahim.vercel.app/'
+    },
+    {
+        id: 2,
+        content: 'HTML-CSS',
+        url: 'https://html-css-projects-alpha.vercel.app/'
+    },
+    {
+        id: 3,
+        content: 'HTML-CSS-JS',
+        url: 'https://linktree-ibrahim.vercel.app/'
+    },
+    {
+        id: 4,
+        content: 'React',
+        url: 'https://linktree-ibrahim.vercel.app/'
+    }
+];

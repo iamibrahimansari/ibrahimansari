@@ -5,9 +5,7 @@ import {Link} from 'react-router-dom';
 import TitleAndDesc from '../components/TitleAndDesc';
 import Project from '../components/Project';
 
-import {projectsTitleDesc, projectsInfo} from '../data';
-
-const othersLinkContent = ['LinkTree', 'HTML-CSS', 'HTML-CSS-JS', 'React'];
+import {projectsTitleDesc, projectsInfo, othersLinkContent} from '../data';
 
 const Projects = () =>{
     const [projects, setProjects] = useState(projectsInfo);
